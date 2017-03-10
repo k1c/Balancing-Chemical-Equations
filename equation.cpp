@@ -10,8 +10,7 @@ Equation::Equation()
 
 }
 
-//Puts together the entire end equation as an object of equation that is a string. This is returned to the top level code
-//for the interface.
+//Puts together the entire end equation as an object of equation that is a string. 
 Equation::Equation(Element& one,Element& two,Compound& three){
 
     equation=one.toString() + " + " + two.toString() + " = " + three.get_c_abbreviation();
