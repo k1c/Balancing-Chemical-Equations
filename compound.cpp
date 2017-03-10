@@ -11,8 +11,8 @@ Compound::Compound(){
 
 Compound::Compound(Element one, Element two)
 {
-    // Set up the values for the compound based on the given elements. If statement will make sure that
-    //the compound is printed in accordance with IUPAC Standards
+    // Set up the values for the compound based on the given elements. 
+    //If statement will make sure the compound is printed in accordance with IUPAC Standards
     if (one.getCharge() < two.getCharge()){
         c_atomicMass = (one.get_atomic_mass() * one.get_atoms_needed()) + (two.get_atomic_mass() * two.get_atoms_needed());
         c_moles = one.find_moles_required(two) + two.find_moles_required(one);
